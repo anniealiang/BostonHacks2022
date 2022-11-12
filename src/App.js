@@ -12,6 +12,10 @@ function App() {
         <h1 className='text-center'>Mood Calendar</h1>
         <div className='calendar-container'>
           <Calendar onChange={setDate} value={date} />
+          <input type="text" placeholder="username" />
+          <input type="text" placeholder="password" />
+          <button>LOGIN</button>
+
         </div>
         <p className='text-center'>
           <span className='bold'>Selected Date:</span>{' '}
