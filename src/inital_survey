@@ -1,0 +1,114 @@
+<!DOCTYPE html;
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Daily Check Up Survey 
+	</title>
+	
+		<b>I don't chase, I attract!
+			I will slay today!
+		</b>
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #a9f5f8;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+            background-color: #8ec0ca;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<h1>How was Today? </h1>
+	<form action="/action_page.php">
+        <label for="moods">Choose your mood for:</label>
+        <select name="moods" id="moods">
+          <option value="Happy">Happy</option>
+          <option value="Angry">Angry</option>
+          <option value="Sad">Sad</option>
+          <option value="Energetic">Energetic</option>
+        </select>
+        <br><br>
+        <div class="form-control">
+			<label for="events" id="label-events">
+				What did you do today? 
+			</label>
+			<input type="text"
+				id="events"
+				placeholder="Today I..." />
+		</div>
+        <div class="form-control">
+			<label for="review" id="label-review">
+				Would anything have made it better?
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="text"
+				id="review"
+				placeholder="Today would have been better if..." />
+		</div>
+        <input type="submit" value="Submit">
+      </form>
